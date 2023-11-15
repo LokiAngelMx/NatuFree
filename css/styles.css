@@ -1,0 +1,27 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4f9f5;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #11999e;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    background-color: #30e3ca;
+    text-align: center;
+    padding: 10px 0;
+}

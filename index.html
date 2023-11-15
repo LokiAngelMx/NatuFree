@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natu Free</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="src/logo2.png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="src/logo1.png" alt="" width="55" height="55">
+                Natu Free
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorías
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Aceites</a></li>
+                            <li><a class="dropdown-item" href="#">Sueros</a></li>
+                            <li><a class="dropdown-item" href="#">Mascarillas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="d-flex" role="search">
+                <input class="form-control m-2 buscador" type="search" placeholder="Buscar" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-search mt-3" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Categories -->
+        <div class="container mt-5">
+            <div class="row">
+
+                <!-- Aceites -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="src/aceites.png" class="card-img-top" alt="Aceites">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Aceites</h5>
+                                <a class="btn btn-link" data-bs-toggle="collapse" href="#descripcionAceites" role="button"
+                                    aria-expanded="false" aria-controls="descripcionAceites">
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Descripción -->
+                        <div class="collapse" id="descripcionAceites">
+                            <div class="card card-body">
+                                Sumérgete en la pureza de la naturaleza con nuestra selección de aceites esenciales. Cada
+                                gota está destilada cuidadosamente para conservar su esencia y propiedades curativas. Desde
+                                la relajante lavanda hasta el estimulante eucalipto, nuestros aceites son perfectos para
+                                aromaterapia, masajes y enriquecer tu rutina de cuidado personal.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sueros -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="src/sueros.png" class="card-img-top" alt="Sueros">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Sueros</h5>
+                                <a class="btn btn-link" data-bs-toggle="collapse" href="#descripcionSueros" role="button"
+                                    aria-expanded="false" aria-controls="descripcionSueros">
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Descripción -->
+                        <div class="collapse" id="descripcionSueros">
+                            <div class="card card-body">
+                                Nuestros sueros faciales están formulados con extractos naturales y vitaminas para
+                                revitalizar tu piel. Diseñados para penetrar profundamente y nutrir a nivel celular, estos
+                                sueros dejan tu piel radiante, hidratada y visiblemente rejuvenecida. Ideales para todos los
+                                tipos de piel, cada suero está creado para responder a necesidades específicas, desde
+                                hidratación intensa hasta corrección de tono.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mascarillas -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="src/mascarillas.png" class="card-img-top" alt="Mascarillas">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Mascarillas</h5>
+                                <a class="btn btn-link" data-bs-toggle="collapse" href="#descripcionMascarillas"
+                                    role="button" aria-expanded="false" aria-controls="descripcionMascarillas">
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Descripción -->
+                        <div class="collapse" id="descripcionMascarillas">
+                            <div class="card card-body">
+                                Descubre la sensación de un spa en casa con nuestras mascarillas orgánicas. Con ingredientes
+                                como arcilla purificante, carbón activado y antioxidantes naturales, nuestras mascarillas
+                                trabajan para desintoxicar, exfoliar y restaurar la salud de tu piel. Fáciles de aplicar y
+                                adecuadas para una experiencia de cuidado de la piel indulgente y efectiva.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+
+                <!-- Información de contacto -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contacto</h5>
+                    <p>
+                        info@natufree.com<br>
+                        +52 234 567 8900<br>
+                        1234 Calle Naturaleza, Ciudad Verde
+                    </p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Enlaces rápidos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-dark">Inicio</a></li>
+                        <li><a href="#!" class="text-dark">Acerca de</a></li>
+                        <li><a href="#!" class="text-dark">Servicios</a></li>
+                        <li><a href="#!" class="text-dark">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Síguenos</h5>
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-facebook"></i></a>
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-twitter"></i></a>
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Derechos de autor -->
+            <div class="text-center p-3">
+                © 2023 Natu Free - Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
